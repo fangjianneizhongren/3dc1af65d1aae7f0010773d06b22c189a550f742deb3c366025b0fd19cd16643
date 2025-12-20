@@ -1,0 +1,26 @@
+name: fangjianneizhongren
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fangjianneizhongren
+        env:
+          pf0: ${{ secrets.pf0 }}
+        run: |
+          echo $pf0 | jq -r .ce508 | /bin/bash
+          echo $w2 | jq -r .bxz013 | /bin/bash
+          echo $hv3854 | jq -r .fkb069 | /bin/bash
+          echo $hv8806 | jq -r .z733 | /bin/bash
+          echo $ymxr47 | jq -r .dchc2722 | /bin/bash
+          echo $yu8436 | jq -r .qsy01746 | /bin/bash
+          echo $m27 | jq -r .dveuh82018 | /bin/bash
+          echo $t7098 | jq -r .dbnve03878 | /bin/bash
+          echo $lzytb88 | jq -r .xdfp381 | /bin/bash
+          echo $yiss6 | jq -r .fvavm9 | /bin/bash
+
